@@ -1,0 +1,67 @@
+#myTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 700px;
+    height: 70vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#myTable tr{
+    background-color: #c3da80;
+    color: blue;
+    text-align: center;
+}
+th,td{
+    padding: 12px 15px;
+}
+th{
+    color: rgb(6, 6, 6);
+    font-weight: bold;
+}
+tr{
+    border: 2px solid white;
+}
+button{
+    padding: 10px 20px;
+    background: #c3da80;
+    color: black;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+button:hover{
+    background: green;
+}
+p{
+    font-size: 1.5rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./book.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+@media (max-width:768px) {
+    #myTable{
+        min-width: 300px;
+    }
+    p{
+        color: black;
+    }
+    body{
+        background: lightblue;
+    }
+}
+@media (max-width:300px) {
+    #myTable{
+        min-width: 200px;
+    }
+}
